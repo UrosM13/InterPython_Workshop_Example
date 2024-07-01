@@ -21,9 +21,12 @@ def load_dataset(filename):
 
 
 def mean_mag(data,mag_col):
-    """Calculate the mean magnitude of a lightcurve  >uros added 1<"""
-    return data[mag_col].mean()
-
+    """Calculate the mean magnitude of a lightcurve  >uros added 1<
+    
+    :param data: pd.DataFrame with observed magnitudes for a single source.
+    :param mag_col: a string with the name of the column for calculating the mean.
+    :returns: A float with mean value of the column ... return data[mag_col].mean()
+    """
 
 def max_mag(data,mag_col):
     """Calculate the max magnitude of a lightcurve >uros added 2<
@@ -36,7 +39,6 @@ def max_mag(data,mag_col):
 
 def min_mag(data,mag_col):
     """Calculate the min magnitude of a lightcurve >uros added 3<
-    
     :param data: pd.DataFrame with observed magnitudes for a single source.
     :param mag_col: a string with the name of the column for calculating the min value.
     :returns: The min value of the column.
